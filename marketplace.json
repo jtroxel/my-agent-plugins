@@ -1,0 +1,13 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/marketplace.schema.json",
+  "name": "agentic-plugins",
+  "description": "Portable Agent Plugins and Agent Skills with optional native agent profiles.",
+  "plugins": [
+    {
+      "name": "agentic-foundation",
+      "description": "Starter skills and native reviewer profiles for agent-plugin repositories.",
+      "version": "0.1.0",
+      "source": "./plugins/agentic-foundation"
+    }
+  ]
+}

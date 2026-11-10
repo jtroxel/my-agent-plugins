@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "agentic-foundation",
+  "version": "0.1.0",
+  "description": "Portable guidance for GUI automation, interim agent artifacts, CTO-style technical writing, and agent-plugin authoring, with optional native reviewer profiles."
+}

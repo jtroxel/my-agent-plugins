@@ -1,0 +1,36 @@
+{
+  "name": "@johntroxel/agentic-plugins",
+  "version": "0.1.0",
+  "description": "A source marketplace for portable Agent Plugins and Agent Skills.",
+  "type": "module",
+  "files": [
+    "bin/",
+    "plugins/",
+    "templates/",
+    "marketplace.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "bin": {
+    "agentic-plugins": "./bin/agentic-plugins.mjs"
+  },
+  "scripts": {
+    "install:local": "node ./bin/agentic-plugins.mjs install . --target . --agents claude-code,cursor-agent,copilot --copy",
+    "update:local": "node ./bin/agentic-plugins.mjs update --target .",
+    "install:link": "node ./bin/agentic-plugins.mjs install . --target . --agents claude-code,cursor-agent,copilot",
+    "skills:add": "npx skills add ./plugins/agentic-foundation --all",
+    "skills:update": "npx skills update",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22.20.0"
+  },
+  "keywords": [
+    "agent-plugins",
+    "agent-skills",
+    "claude-code",
+    "cursor",
+    "copilot"
+  ],
+  "license": "MIT"
+}
